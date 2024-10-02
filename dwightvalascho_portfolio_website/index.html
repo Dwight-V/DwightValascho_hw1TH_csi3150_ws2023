@@ -18,7 +18,13 @@
     <!-- ############### Start of header ############### -->
     <header class="navbar">
       <!-- Logo -->
-      <img src="" alt="" />
+      <img
+        src="./assets/img/Company Logo.png"
+        alt="V A L logo"
+        height="auto"
+        width="80px"
+        style="background-color: #000"
+      />
       <!-- Navbar -->
       <nav>
         <ul>
@@ -30,19 +36,29 @@
       <!-- Call to action -->
       <button class="btn_hire">Hire me!</button>
     </header>
+
     <!-- ############### Start of main ############### -->
     <main>
       <!-- Hero section -->
       <div class="main">
-        <h4>Hi, my name is <span>Dwight</span>.</h4>
-        <p class="title">Freelance Web Developer</p>
-        <p class="subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing.
-        </p>
-        <img
-          src="./assets/img/pexels-nikitapishchugin-27489977.jpg"
-          alt="Stary night sky"
-        />
+        <section>
+          <h4>Hi, my name is <span>Dwight</span>.</h4>
+          <p class="title">Freelance Web Developer</p>
+          <p class="subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
+          </p>
+        </section>
+        <figure>
+          <img
+            style="width: 100px; height: auto"
+            src="./assets/img/headshot.jpg"
+            alt="Picture of me smiling."
+          />
+          <figcaption>
+            <i>"You miss 100% of the shots you don't take."</i><br />
+            - Wayne Gretzky
+          </figcaption>
+        </figure>
       </div>
       <!-- Hero section END -->
 
@@ -79,9 +95,65 @@
       <!-- Assurance section END -->
 
       <!-- About Me section -->
+      <div class="about">
+        <section class="img_about">
+          <img
+            src="./assets/img/pexels-nikitapishchugin-27489977.jpg"
+            alt="Starry sky"
+            style="height: 200px; width: auto"
+          />
+        </section>
+        <section class="text_about">
+          <p>
+            I'm Dwight, a senior at Oakland University. I'm currently employed
+            as a Student Network Engineer at OU, and was an Engineering
+            Technician at the Detroit Arsenal these past two summers. I'm
+            interested in Android app development, and have made many personal
+            projects which run on my phone.
+            <br />
+            To get to know me more, check out my
+            <a href="./html/my_resume.html">resume</a> or
+            <a href="./html/my_fun_facts.html">fun facts</a> pages.
+          </p>
+        </section>
+      </div>
       <!-- About Me section END -->
+
+      <!-- Progress section -->
+      <section>
+        <label for="degree_progress">Progress towards degree:</label>
+        <progress id="degree_progress" value="102" max="128">102</progress>
+      </section>
     </main>
     <!-- ############### Start of footer ############### -->
-    <footer></footer>
+    <footer>
+      <hr />
+      <div>
+        <section class="copyright">
+          <h4 class="footer_h4">Copyright</h4>
+          <p>
+            Some images are owned by myself. Some are from pexels.com. Icons are
+            from boxicon.com.
+          </p>
+        </section>
+        <section class="contact">
+          <h4 class="footer_h4">Contact</h4>
+          <p>
+            <a href="mailto:rumbling-sleek-oat@duck.com">Email</a><br />
+            <a href="https://github.com/Dwight-V" target="_blank">Github</a>
+            <br />
+            <a href="#">LinkedIn</a>
+          </p>
+        </section>
+        <section class="map">
+          <h4 class="footer_h4">Site Map</h4>
+          <p>
+            <a href="#">Home</a><br />
+            <a href="./html/my_resume.html">Resume</a><br />
+            <a href="./html/my_fun_facts.html">Fun Facts</a>
+          </p>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
