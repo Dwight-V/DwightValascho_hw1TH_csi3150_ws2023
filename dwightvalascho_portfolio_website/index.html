@@ -47,13 +47,14 @@
     <main>
       <!-- Hero section -->
       <div class="main">
+        <!-- First half of hero -->
         <section>
-          <h4>Hi, my name is <span>Dwight</span>.</h4>
-          <p class="title">Freelance Web Developer</p>
-          <p class="subtitle">
-            Lorem ipsum dolor sit amet consectetur adipisicing.
-          </p>
+          <h1>Hi, I'm <span>Dwight</span>.</h1>
+          <h3>Freelance Web Developer</h3>
+          <p class="subtitle">Welcome to my portfolio website!</p>
         </section>
+
+        <!-- Second half of hero -->
         <figure>
           <img
             style="width: 100px; height: auto"
@@ -61,76 +62,58 @@
             alt="Picture of me smiling."
           />
           <figcaption>
-            <i>"You miss 100% of the shots you don't take."</i><br />
+            "You miss 100% of the shots you don't take."<br />
             - Wayne Gretzky
           </figcaption>
         </figure>
       </div>
-      <!-- Hero section END -->
 
-      <!-- Assurance section -->
-      <div class="assurance">
-        <div class="item">
-          <div class="icon"><i class="bx bx-check-shield"></i></div>
-          <div class="info">
-            <h3>10+</h3>
-            <p>Years of experience</p>
-          </div>
-          <!-- You can add new local classes by putting a space after 'bx bx-chevoron-right', and it'll know 'bx bx-c...' is for calling the outsourced style, and the next one is a local one. -->
-          <i class="bx bx-chevron-right"></i>
-        </div>
-
-        <div class="item">
-          <div class="icon"><i class="bx bx-check-circle"></i></div>
-          <div class="info">
-            <h3>200</h3>
-            <p>Hours of coding</p>
-          </div>
-          <i class="bx bx-chevron-right item_arrow"></i>
-        </div>
-
-        <div class="item">
-          <div class="icon"><i class="bx bx-happy-heart-eyes"></i></div>
-          <div class="info">
-            <h3>17</h3>
-            <p>Projects completed</p>
-          </div>
-          <i class="bx bx-chevron-right item_arrow"></i>
-        </div>
-      </div>
-      <!-- Assurance section END -->
-
-      <!-- About Me section -->
+      <!-- About me section -->
       <div class="about">
-        <section class="img_about">
+        <h3>About Me</h3>
+        <!-- First half of about section -->
+        <figure>
           <img
             src="./assets/img/pexels-nikitapishchugin-27489977.jpg"
             alt="Starry sky"
-            style="height: 200px; width: auto"
+            height="200px"
           />
-        </section>
-        <section class="text_about">
+          <figcaption>
+            <i>
+              from
+              <a
+                href="https://www.pexels.com/photo/milky-way-27489977/"
+                target="_blank"
+                >Nikita Pishchugin
+              </a>
+            </i>
+          </figcaption>
+        </figure>
+
+        <!-- Second half of about section -->
+        <section>
           <p>
-            I'm Dwight, a senior at Oakland University. I'm currently employed
-            as a Student Network Engineer at OU, and was an Engineering
-            Technician at the Detroit Arsenal these past two summers. I'm
-            interested in Android app development, and have made many personal
-            projects which run on my phone.
-            <br />
-            To get to know me more, check out my
+            I'm Dwight, a senior at Oakland University (OU). I'm currently
+            employed as a student network engineer on campus, and was an
+            engineering technician at the Detroit Arsenal these past two
+            summers. I'd like to be a software engineer with a focus in Android
+            app development. I've already made a few Android apps and am excited
+            to continue! Check out my
             <a href="./html/my_resume.html">resume</a> or
-            <a href="./html/my_fun_facts.html">fun facts</a> pages.
+            <a href="./html/my_fun_facts.html">fun facts</a> pages to get to
+            know me better.
           </p>
         </section>
       </div>
-      <!-- About Me section END -->
 
       <!-- Progress section -->
       <section>
-        <label for="degree_progress">Progress towards degree:</label>
+        <h3>Degree Completion</h3>
+        <label for="degree_progress">Progress towards Bachelor's:</label>
         <progress id="degree_progress" value="102" max="128">102</progress>
       </section>
     </main>
+
     <!-- ############### Start of footer ############### -->
     <footer>
       <hr />
@@ -138,8 +121,15 @@
         <section class="copyright">
           <h4 class="footer_h4">Copyright</h4>
           <p>
-            Some images are owned by myself. Some are from pexels.com. Icons are
-            from boxicon.com.
+            <i>
+              Material under copyright goes to their respective owners. All
+              content that is not owned by the site is indicated as such. Please
+              <a href="mailto:rumbling-sleek-oat@duck.com">contact me</a> with
+              questions, concerns, or if you feel I've violated your copyright.
+              <br />
+              All icons used are from
+              <a href="https://boxicons.com/" target="_blank">boxicons.com</a>.
+            </i>
           </p>
         </section>
         <section class="contact">
@@ -148,7 +138,7 @@
             <a href="mailto:rumbling-sleek-oat@duck.com">Email</a><br />
             <a href="https://github.com/Dwight-V" target="_blank">Github</a>
             <br />
-            <a href="#">LinkedIn</a>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
           </p>
         </section>
         <section class="map">
