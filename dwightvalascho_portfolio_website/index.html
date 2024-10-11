@@ -39,15 +39,17 @@
         </ul>
       </nav>
       <!-- Call to action -->
-      <button class="btn_hire">Hire me!</button>
+      <button class="btn_hire" formaction="./html/my_resume.html">
+        Hire me!
+      </button>
     </header>
 
     <!-- ############### Start of main ############### -->
     <main>
       <!-- Hero section -->
-      <div class="main">
+      <div class="hero">
         <!-- First half of hero -->
-        <section>
+        <section class="text">
           <h1>Hi, I'm <span>Dwight</span>.</h1>
           <h3>Freelance Web Developer</h3>
           <p class="subtitle">Welcome to my portfolio website!</p>
@@ -55,11 +57,7 @@
 
         <!-- Second half of hero -->
         <figure>
-          <img
-            style="width: 100px; height: auto"
-            src="./assets/img/headshot.jpg"
-            alt="Picture of me smiling."
-          />
+          <img src="./assets/img/headshot.jpg" alt="Picture of me smiling." />
           <figcaption>
             "You miss 100% of the shots you don't take."<br />
             - Wayne Gretzky
@@ -68,14 +66,13 @@
       </div>
 
       <!-- About me section -->
+      <h3 class="section-separator">About Me</h3>
       <div class="about">
-        <h3>About Me</h3>
         <!-- First half of about section -->
         <figure>
           <img
             src="./assets/img/pexels-nikitapishchugin-27489977.jpg"
             alt="Starry sky"
-            height="200"
           />
           <figcaption>
             <i>
@@ -90,7 +87,7 @@
         </figure>
 
         <!-- Second half of about section -->
-        <section>
+        <section class="text">
           <p>
             I'm Dwight, a senior at Oakland University (OU). I'm currently
             employed as a student network engineer on campus, and was an
@@ -106,18 +103,22 @@
       </div>
 
       <!-- Progress section -->
-      <section>
-        <h3>Degree Completion</h3>
-        <label for="degree_progress">Progress towards Bachelor's:</label>
-        <progress id="degree_progress" value="102" max="128">102</progress>
-      </section>
+      <h3 class="section-separator">Degree Completion</h3>
+      <div class="progress">
+        <label for="progress">Progress towards Bachelor's:</label>
+
+        <section>
+          <span>0%</span>
+          <progress id="progress" value="102" max="128">102</progress>
+          <span>100%</span>
+        </section>
+      </div>
     </main>
 
     <!-- ############### Start of footer ############### -->
+    <hr />
     <footer>
-      <hr />
-      <div>
-        <section class="copyright">
+      <div class="copyright">
           <h4 class="footer_h4">Copyright</h4>
           <p>
             <i>
@@ -130,24 +131,24 @@
               <a href="https://boxicons.com/" target="_blank">boxicons.com</a>.
             </i>
           </p>
-        </section>
-        <section class="contact">
-          <h4 class="footer_h4">Contact</h4>
-          <p>
-            <a href="mailto:rumbling-sleek-oat@duck.com">Email</a><br />
-            <a href="https://github.com/Dwight-V" target="_blank">Github</a>
-            <br />
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-          </p>
-        </section>
-        <section class="map">
-          <h4 class="footer_h4">Site Map</h4>
-          <p>
-            <a href="#">Home</a><br />
-            <a href="./html/my_resume.html">Resume</a><br />
-            <a href="./html/my_fun_facts.html">Fun Facts</a>
-          </p>
-        </section>
+      </div>
+
+      <div class="contact">
+        <h4 class="footer_h4">Contact</h4>
+        <ul>
+          <li><a href="mailto:rumbling-sleek-oat@duck.com">Email</a></li>
+          <li><a href="https://github.com/Dwight-V" target="_blank">Github</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <div class="map">
+        <h4 class="footer_h4">Site Map</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./html/my_resume.html">Resume</a></li>
+          <li><a href="./html/my_fun_facts.html">Fun Facts</a></li>
+        </ul>
       </div>
     </footer>
   </body>

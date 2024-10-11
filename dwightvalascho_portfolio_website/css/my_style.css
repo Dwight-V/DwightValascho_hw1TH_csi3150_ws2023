@@ -1,0 +1,293 @@
+
+
+* {
+  /* Sets variables */
+  /* Palette from https://coolors.co/palette/22223b-4a4e69-9a8c98-c9ada7-f2e9e4 */
+  --bg-primary: #22223B;
+  --bg-secondary: #4A4E69;
+  /* --font-color-primary: #F2E9E4; */
+  --font-color-primary: #fdfdfd;
+  --font-color-secondary: #dfb7ad;
+  --backup-color: #9A8C98;
+
+  --h1-size: 40px;
+  --h3-size: 25px;
+
+  /* supresses browser defaults and selects alt box model */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif, Tahoma;
+
+  /* border: 3px #f0f0f0 solid; */
+  color: var(--font-color-primary);
+}
+
+img {
+  border: 5px solid var(--bg-secondary);
+}
+
+a {
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  cursor: pointer;
+  color: var(--font-color-secondary);
+}
+
+/*
+.two_col_grid {
+  display: grid;
+  // The amount of 'auto's is the amount of columns.
+  grid-template-columns: auto auto;
+  // border: solid;
+}
+*/
+
+/* region from https://stackoverflow.com/a/8253551 */
+/* #region ###### Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Adds padding to the left & right */
+  padding: 8px 0.8%;
+  background: var(--bg-secondary);
+}
+
+.navbar nav {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-evenly; */
+}
+
+.navbar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.navbar nav ul li {
+  /* Removes bullet points */
+  list-style: none;
+  /* margin: 0 10%; */
+}
+
+.navbar nav ul li a {
+  display: inline-block;
+  /* Removes underline */
+  text-decoration: none;
+  color: var(--font-color-primary);
+  padding: 5px 10px;
+  border-radius: 3rem;
+  transition: background 0.3s ease;
+
+}
+
+.navbar nav ul li:hover a {
+  /* color: var(--font-color-primary); */
+  background-color: var(--backup-color);
+}
+
+/* ### Call to action  */
+/* Only applies to immediate children of the navbar class */
+.navbar > button {
+  padding: 0.7%;
+  background-color: var(--bg-secondary);
+  cursor: pointer;
+  transition: background 0.6s ease;
+  border none;
+  border-radius: 2rem;
+}
+
+.navbar > button:hover {
+  background-color: var(--backup-color);
+}
+/* #endregion */
+
+
+
+
+
+/* #region ###### Main */
+main {
+  background-color: var(--bg-primary);
+}
+
+.section-separator {
+  display: inline-flex;
+  background: var(--bg-secondary);
+  padding: 0.4% 0.6%;
+  /* margin: .5% 0; */
+  font-size: var(--h3-size);
+}
+/* #endregion */
+
+
+/* #region ###### index.html main */
+/* ### Hero section */
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2% 0;
+}
+
+/* hero first section */
+.hero .text {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero h1 span {
+  font-weight: 800;
+}
+
+.hero h3 {
+  font-size: 30px;
+  margin: 0 0 4px;
+}
+
+/* hero second section */
+.hero figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.hero figure img {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+  margin: 0 0 8px;
+}
+
+.hero figure figcaption {
+  font-style: italic;
+}
+
+
+/* ### About me section */
+/* about first section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 10%;
+  /* gap: 5%;
+  padding: 0 2%; */
+}
+
+.about .text {
+  color: var(--font-color-primary);
+  /* flex: 0.8; */
+  width: 45%;
+}
+
+/* about second section */
+.about figure img {
+  /* Entirely fills the space it's given by its parent. */
+  width: 100%;
+}
+
+.about figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* Takes up exactly half of the page vertically */
+  max-width: 30%;
+}
+
+
+/* ### progess section */
+.progress {
+  display: flex;
+  align-items: center;
+}
+
+.progress label {
+  /* background-color: var(--font-color-secondary); */
+  padding: 20px 10px 20px 10%;
+  display: flex;
+  align-items: center;
+}
+
+.progress progress {
+  -webkit-appearance: none;
+  border: 3px solid var(--bg-primary);
+  border-radius: 7px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: var(--font-color-primary);
+  border-radius: 7px;
+}
+progress::-webkit-progress-value {
+  background-color: var(--font-color-secondary);
+  border-radius: 7px;
+}
+progress::-moz-progress-bar {
+  /* style rules for Firefox */
+  background-color: var(--font-color-secondary);
+  border-radius: 7px;
+  color: var(--font-color-secondary);
+}
+/* #endregion */
+
+
+/* #region ###### my_resume.html main */
+
+/* #endregion */
+
+
+/* #region ###### my_fun_facts.html main */
+
+/* #endregion */
+
+
+
+/* #region ###### footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+
+  background-color: var(--backup-color);
+  padding: 0.7% 0 3%;
+}
+
+footer h4 {
+  /* font-weight: 700; */
+  padding-bottom: 8px;
+}
+
+
+/* ### copyright section */
+footer .copyright {
+  width: 30%;
+}
+
+footer .copyright p {
+  font-size: .9rem;
+}
+
+/* ### contact section */
+footer .contact {
+  max-width: 25%;
+}
+
+footer ul {
+  /* padding: 0 15%; */
+  list-style: none;
+}
+
+/* #endregion */
