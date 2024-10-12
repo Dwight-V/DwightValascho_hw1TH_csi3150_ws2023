@@ -19,8 +19,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif, Tahoma;
 
-  /* border: 3px #f0f0f0 solid; */
   color: var(--font-color-primary);
+
+
+  /* border: 3px #f0f0f0 solid; */
 }
 
 img {
@@ -36,16 +38,7 @@ a:hover {
   color: var(--font-color-secondary);
 }
 
-/*
-.two_col_grid {
-  display: grid;
-  // The amount of 'auto's is the amount of columns.
-  grid-template-columns: auto auto;
-  // border: solid;
-}
-*/
-
-/* region from https://stackoverflow.com/a/8253551 */
+/* region comment block from https://stackoverflow.com/a/8253551 */
 /* #region ###### Navbar */
 .navbar {
   display: flex;
@@ -98,7 +91,7 @@ a:hover {
   background-color: var(--bg-secondary);
   cursor: pointer;
   transition: background 0.6s ease;
-  border none;
+  border: none;
   border-radius: 2rem;
 }
 
@@ -244,7 +237,76 @@ progress::-moz-progress-bar {
 
 
 /* #region ###### my_resume.html main */
+/* ### contact_info section */
+.contact_info {
+  padding: 1% 0 0.5%;
+}
 
+.contact_info table {
+  width: 40%;
+}
+
+.contact_info table th {
+  padding-bottom: 2%;
+  width: 50%;
+  width: 20%;
+}
+
+.contact_info table td {
+  padding-bottom: 2%;
+  width: 50%;
+}
+
+
+/* ### objectives section */
+.objectives {
+  padding: 0.5% 0 3%;
+}
+
+
+/* ### professional section */
+.professional {
+  display: flex;
+  flex-direction: column;
+  padding: 1% 8%;
+}
+
+.professional .job {
+  border: 5px solid var(--bg-secondary);
+  padding: 1% .5%;
+  margin-bottom: .5%;
+}
+
+.professional .job:last-child {
+  margin-bottom: 0;
+}
+
+/* ### educational section */
+.educational {
+  padding: 1%;
+}
+
+.educational table {
+  display: table;
+  
+  width: 40%;
+}
+
+.educational table th, .educational table td {
+  background-color: var(--bg-secondary);
+  text-align: center;
+  padding: 2% 1%;
+}
+
+/* ### hobbies section */
+.hobbies {
+  padding: 2% 0;
+}
+
+.hobbies p {
+  width: 50%;
+  padding-left: 5%;
+}
 /* #endregion */
 
 
